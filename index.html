@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Sentiment analysis</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <style>
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   height: 30px;
+   background-color: black;
+   color: white;
+   text-align: center;
+   font-size: 1.3em;
+}
+</style>
+</head>
+
+<body>
+
+   <div class="fluid-container">
+	<img src="/static/sentiment-analysis.gif" z-index="-1"; height="250px" width="100%" style="margin-top:-35px;"> 
+</div>  
+  <div class="container">
+    <h2>Sentiment Analysis</h2>
+    <center>
+      <p> Write out your text below to check its sentiment. </p>
+    </center>
+    <form id="form" action="/" method="POST">
+      <textarea name="text" id="text" style="font-size: 22px;" cols="25" rows="4" class="form-control input-sm"></textarea>
+      <input type="submit" value="Check" id="submit" class="form-control" />
+    </form>
+    {%if senti%}
+	<img src="/static/{{senti}}.png" z-index="-1"; height="140px"  width="20%" style="margin-top:10px; margin-left: 41%;"> 
+    {%endif%}
+    {%if error%}
+    <h4>{{error}} </h4>
+    {%endif%}
+  </div>
+</body>
+</html>
