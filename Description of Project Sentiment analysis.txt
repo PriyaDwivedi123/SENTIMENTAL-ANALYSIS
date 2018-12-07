@@ -1,0 +1,18 @@
+
+DESCRIPTION OF PROJECT
+PROJECT TITLE: Sentiment Analysis
+Sentiment Analysis is the process of ‘computationally’ determining whether a piece of writing is positive, negative or neutral. It’s also known as opinion mining, deriving the opinion or attitude of a speaker or a writer.
+* Where do we use sentimental analysis? 
+Business: In marketing field, companies use it to develop their strategies, to understand customers’ feelings towards products or brand, how people respond to their campaigns or product launches and why consumers don’t buy some products.
+Politics: In political field, it is used to keep track of political view, to detect consistency and inconsistency between statements and actions at the government level. It can be used to predict election results as well.
+Public Actions: Sentiment analysis also is used to monitor and analyse social phenomena, for the spotting of potentially dangerous situations and determining the general mood of the blogosphere also the movies reviews. 
+This project deals with the sentences and the reviews. It is mplemented in python. Natural Language Tool Kit(NLTK) is used to tokenize the sentence into seperate words. Each word is then categorized and adjectives are found. The adjectives data set is downloaded from Python.org which is approximately of 10,000 words and all possible adjectives which tells about a positive or negative statement. This project works on Naive Bayes  algorithm. It is a popular algorithm for classifying text. Although, it is fairly simple, It often performs as well as much more complicated solution. Each row in the dataset contains the text of the review, and whether the tone of the review was classified as positive or negative. In order to do this we'll train an algorithm. 
+For a classification algorithm, we are going to use Naive Bayes. A Naive Bayes classifier works by figuring out the probability of different attributes of the data being associated with a certain class. This is based on Bayes Theorem. The theorem is: 
+P(A|B) = [P(B|A).P(A)]/P(B)
+Tech Stack: 
+Natural Language Processing
+Flask
+Heroku
+Python
+My role in the project:
+Since this project is based on Natural Language Processing which is an application of Python so I have learnt the basics of NLP for this purpose. Python interface is used for writing the code of the project so I have worked on Python 2.7., which is used in the backend of the project. Since this project has a frontend which consists of a user interface. It is designed using HTML, CSS and Java Script. I have designed the front end part of this code using the above three languages. Since the whole concept of Natural Language Processing was new for me so I have learnt and implemented it consecutively. Overall, the project was a good opportunity to further hone my programming skills and expand my knowledge in the fields of Natural Language Processing.
